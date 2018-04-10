@@ -241,8 +241,12 @@ th.vertical span {
     position: absolute;
     left: -50px;
     width: 130px;
-    bottom: 24px;
+    bottom: 22px;
+    text-align: left;
 }
 th.vertical span.red{
   color: red
+}
+td.no-wrap{
+
 }

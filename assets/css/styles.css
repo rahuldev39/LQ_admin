@@ -2059,8 +2059,9 @@ vertical-align: top;
 border-top: 1px solid #f1f1f1;
 }
 .table > thead > tr > th {
-vertical-align: bottom;
-border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    vertical-align: middle;
+    text-align: center;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
