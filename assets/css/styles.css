@@ -2940,15 +2940,10 @@ border-color: #03a9f4;
 color: #03a9f4;
 background-color: #ffffff;
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-color: #ffffff;
-background-color: #0398db !important;
-border-color: #0398db !important;
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #284469 !important;
+    border-color: #32527c !important;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -6289,7 +6284,8 @@ border-left: 0;
 .fc .fc-view > table > tbody > tr:last-child td,
 .tabe-responsive .fc .fc-view > table > tfoot > tr:last-child td,
 .fc .fc-view > table > tfoot > tr:last-child td {
-border-bottom: 0;
+    border-bottom: 0;
+    color: #333333;
 }
 table.fc-border-separate > thead > tr > th:last-child {
 border-right: 0 !important;
@@ -6836,11 +6832,13 @@ padding-right: 16px;
 box-shadow: none !important;
 }
 .btn-default {
-border-color: #e1e1e1 !important;
+    border-color: #adb0b3 !important;
+    color: #544e4e;
 }
 .btn-default:hover {
-background-color: #fff !important;
-border-color: #eeeeee !important;
+    background-color: #eeeeef !important;
+    border-color: #9aa6ad !important;
+    color: black;
 }
 .btn-inverse {
 color: #ffffff;
