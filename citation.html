@@ -211,7 +211,7 @@
 	<ul class="acc-menu">
 		<li class="nav-separator"><span>Navigation</span></li>
     <li><a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
-		<li class="active"><a href="#"><i class="fa fa-users"></i><span>User</span></a></li>
+		<li class=""><a href="#"><i class="fa fa-users"></i><span>User</span></a></li>
 
 		<li><a href="javascript:;"><i class="fa fa-book"></i><span>Case</span></a>
 			<ul class="acc-menu">
@@ -222,7 +222,7 @@
 		</li>
 <li><a href="#"><i class="fa fa-file-text-o"></i><span>Report</span></a></li>
 <li><a href="#"><i class="fa fa-bar-chart"></i><span>Analytics</span></a></li>
-
+<li><a href="#"><i class="fa fa-gavel" aria-hidden="true"></i><span>Citation</span></a></li>
 
 	</ul>
 </nav>
@@ -237,7 +237,7 @@
                             <ol class="breadcrumb">
 
 <li class=""><a href="index.html">Home</a></li>
-<li class="active"><a href="index.html">User Management</a></li>
+<li class="active"><a href="index.html">Citation</a></li>
 
                             </ol>
 
@@ -250,95 +250,214 @@
 
 			<div class="panel panel-bluegraylight" data-widget='{"draggable": "false"}'>
 				<div class="panel-heading">
-					<h2>User Management</h2>
+					<h2>Citation</h2>
 					<div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
-          <a href="#" class="btn btn-primary"> <i class="fa fa-plus"></i> Add User</a>
+
           </div>
 				</div>
 				<div class="panel-body">
 
-          <div class="controls-above-table">
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <span>Showing 0 out of 0</span>
-                    </div>
-                    <div class="col-sm-8">
-                      <form class="form-inline pull-right">
-                        <label for="">Show Records  &nbsp;</label>
-                        <select class="records" id="pageNo" name="pageNo"><option value="10">10</option><option value="20">20</option><option value="40">40</option><option value="80">80</option><option value="100">100</option></select>
-                      </form>
+            <div class="form-container">
+              <label>Citation</label>
+              <div class="row">
+                       <div class="col-md-9">
+                           <div class="form-group">
+                              <div class="input-group">
+                                <input type="text"  class="form-control" placeholder="Please Enter Citation">
+                                <div class="input-group-btn">
+                                  <a href="#" class="btn btn-primary ">Submit</a>
+                                </div>
+                              </div>
 
-                    </div>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="citation-result">
+                       <div class="table-responsive">
+                  <table class="table table-lightborder table-bordered compact-table">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="tab-label">Citation</div>
+                          <strong>LQ 2016 SC 0773</strong>
+                        </td>
+                        <td>
+                          <div class="tab-label">Petitioner</div>
+                          <strong>Brahmosmj Education Society & Another</strong>
+                        </td>
+                        <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                          <div class="tab-label">Respondent</div>
+                          <strong>State of West Bengal & Others</strong>
+                        </td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <div class="tab-label">judgement date</div>
+                          <strong>12 June 2018</strong>
+                        </td>
+                        <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                          <div class="tab-label">Count</div>
+                          <strong>123</strong>
+                        </td>
+                        <td>
+                          <div class="tab-label">Case No.</div>
+                          <strong>1456</strong>
+                        </td>
+                      </tr>
 
 
 
-                  </div>
+                    </tbody>
+                  </table>
                 </div>
 
-            <div class="table-responsive">
+                <div class="alternate-citation">
+
+                  <div class="table-heading">
+                    <h4>Alternate Citation</h4>
+                  </div>
+
+                  <div class="table-responsive">
               <table class="table table-striped">
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>Name</th>
-								<th>Email ID</th>
-								<th>Phone no.</th>
-                <th width="150">Action</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>UAB123</td>
-								<td>Mark Otto</td>
-								<td>Xyz@legitquest.com</td>
-								<td>98123456</td>
-                <td>
-                  <a class="btn btn-xs btn-primary btn-label" href="#"><i class="fa fa-pencil"></i> Edit</a>
-                  <a class="btn btn-xs btn-danger btn-label" href="#"><i class="fa fa-remove"></i> Delete</a>
-                </td>
-							</tr>
-
+            <thead>
               <tr>
-								<td>UAB456</td>
-								<td>Jacob Thornton</td>
-								<td>Xyz@legitquest.com</td>
-								<td>98123456</td>
-                <td>
-                  <a class="btn btn-xs btn-primary btn-label" href="#"><i class="fa fa-pencil"></i> Edit</a>
-                  <a class="btn btn-xs btn-danger btn-label" href="#"><i class="fa fa-remove"></i> Delete</a>
-                </td>
-							</tr>
-
+                <th>Citation</th>
+                <th>Petitioner</th>
+                <th>Respondent</th>
+                <th>Judgement Date</th>
+                <th>Count</th>
+                <th>Case No.</th>
+              </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>UAB789</td>
-                <td>Larry Bird</td>
-                <td>Xyz@legitquest.com</td>
-                <td>98123456</td>
-                <td>
-                  <a class="btn btn-xs btn-primary btn-label" href="#"><i class="fa fa-pencil"></i> Edit</a>
-                  <a class="btn btn-xs btn-danger btn-label" href="#"><i class="fa fa-remove"></i> Delete</a>
-                </td>
+                <td>LQ 2016 SC 0773</td>
+                <td>Mark Otto</td>
+                <td>Jacob Thornton</td>
+                <td> 12 jan 2015 </td>
+                <td>145</td>
+                <td>UAB123</td>
+              </tr>
+              <tr>
+                <td>LQ 2016 SC 0773</td>
+                <td>Brahmosmj Education Society & Another</td>
+                <td>State of West Bengal & Others</td>
+                <td>12 June 2018</td>
+                <td>125</td>
+                <td>UAB123</td>
+              </tr>
+              <tr>
+                <td>LQ 2016 SC 0773</td>
+                <td>Mark Otto</td>
+                <td>Jacob Thornton</td>
+                <td> 12 jan 2015 </td>
+                <td>145</td>
+                <td>UAB123</td>
+              </tr>
+              <tr>
+                <td>LQ 2016 SC 0773</td>
+                <td>Brahmosmj Education Society & Another</td>
+                <td>State of West Bengal & Others</td>
+                <td>12 June 2018</td>
+                <td>125</td>
+                <td>UAB123</td>
               </tr>
 
-              <tr>
-                <td>UAB1234</td>
-                <td>Jhone Doe</td>
-                <td>Xyz@legitquest.com</td>
-                <td>98123456</td>
-                <td>
-                  <a class="btn btn-xs btn-primary btn-label" href="#"><i class="fa fa-pencil"></i> Edit</a>
-                  <a class="btn btn-xs btn-danger btn-label" href="#"><i class="fa fa-remove"></i> Delete</a>
-                </td>
-              </tr>
+            </tbody>
+          </table>
+            </div>
+                </div>
 
-						</tbody>
-					</table>
+
+              </div>
+
+
+
+
             </div>
 
 				</div>
+
 			</div>
 		</div>
 	</div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="panel panel-bluegraylight" data-widget='{"draggable": "false"}'>
+        <div class="panel-heading">
+          <h2>Referred Case</h2>
+          <div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Case</th>
+                <th with="100">Treatment</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>LQ 2016 SC 0773</td>
+                <td>
+                  <select class="form-control input-sm" style="width:100px">
+                    <option>Assign</option>
+                    <option>Not Assign</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>LQ 2016 SC 0773</td>
+                <td>
+                  <select class="form-control input-sm" style="width:100px">
+                    <option>Assign</option>
+                    <option>Not Assign</option>
+                  </select>
+                </td>
+              </tr><tr>
+                <td>1</td>
+                <td>LQ 2016 SC 0773</td>
+                <td>
+                  <select class="form-control input-sm" style="width:100px">
+                    <option>Assign</option>
+                    <option>Not Assign</option>
+                  </select>
+                </td>
+              </tr><tr>
+                <td>1</td>
+                <td>LQ 2016 SC 0773</td>
+                <td>
+                  <select class="form-control input-sm" style="width:100px">
+                    <option>Assign</option>
+                    <option>Not Assign</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="panel-footer text-center">
+					<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#citation-modal">Add Citation</a>
+          <a href="#" class="btn btn-primary btn-lg">Add Referred Case</a>
+				</div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 
 
@@ -346,162 +465,89 @@
                         </div> <!-- #page-content -->
                     </div>
                     <footer role="contentinfo">
-    <div class="clearfix">
-        <ul class="list-unstyled list-inline pull-left">
-            <li><h6 style="margin: 0;">&copy; 2018 Legitquest</h6></li>
-        </ul>
-        <button class="pull-right btn btn-link btn-xs hidden-print" id="back-to-top"><i class="fa fa-arrow-up"></i></button>
-    </div>
-</footer>
+                      <div class="clearfix">
+                          <ul class="list-unstyled list-inline pull-left">
+                              <li><h6 style="margin: 0;">&copy; 2018 Legitquest</h6></li>
+                          </ul>
+                          <button class="pull-right btn btn-link btn-xs hidden-print" id="back-to-top"><i class="fa fa-arrow-up"></i></button>
+                      </div>
+                  </footer>
 
                 </div>
             </div>
         </div>
 
-        <div class="infobar-wrapper scroll-pane">
-            <div class="infobar scroll-content">
 
-    <div id="widgetarea">
 
-        <div class="widget" id="widget-sparkline">
-            <div class="widget-heading">
-                <a href="javascript:;" data-toggle="collapse" data-target="#sparklinestats"><h4>Project Status</h4></a>
+        <!-- Modal -->
+        <div class="modal fade" id="citation-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add Citation</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-container">
+              <div class="row">
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               <label>Citation</label>
+                               <input type="text" class="form-control" placeholder="Enter Citation">
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                           <div class="form-group">
+                               <label>Petitioner</label>
+                               <input type="date" placeholder="Enter petitioner detail" class="form-control">
+                             </div>
+                         </div>
+
+                         <div class="col-md-6">
+                           <div class="form-group">
+                               <label>Respondent</label>
+                               <input type="date" placeholder="Enter respondent detail" class="form-control">
+                             </div>
+                         </div>
+
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label>Judgement Date</label>
+                                 <input type="text" placeholder="Enter date" class="form-control">
+                               </div>
+                           </div>
+
+                     </div>
+
+
+
+                            <div class="row">
+
+                                       <div class="col-md-6">
+                                         <div class="form-group">
+                                             <label>Count</label>
+                                             <input type="text" placeholder="Enter count" class="form-control">
+                                           </div>
+                                       </div>
+
+                                       <div class="col-md-6">
+                                         <div class="form-group">
+                                             <label>Case No.</label>
+                                             <input type="text" placeholder="Enter case no." class="form-control">
+                                           </div>
+                                       </div>
+
+                                   </div>
+
             </div>
-            <div id="sparklinestats" class="collapse in">
-                <div class="widget-body">
-                    <ul class="sparklinestats">
-                        <li class="col-md-4 col-sm-4 col-xs-4">
-                            <h4>$39K</h4>
-                            <span>Expenses</span>
-                        </li>
-                        <li class="col-md-4 col-sm-4 col-xs-4">
-                            <h4>$11K</h4>
-                            <span>Net Profit</span>
-                        </li>
-                        <li class="col-md-4 col-sm-4 col-xs-4">
-                            <h4>$29K</h4>
-                            <span>Total Sales</span>
-                        </li>
-                    </ul>
-                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="widget" id="widget-piechart">
-            <div class="widget-heading">
-                <a href="javascript:;" data-toggle="collapse" data-target="#piechartstats"><h4>Chart</h4></a>
-            </div>
-            <div id="piechartstats" class="collapse in">
-                <div class="widget-body">
-                    <li class="chart-label"><span>Earnings this week</span></li>
-                    <div id="bigline"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="widget">
-            <div class="widget-heading">
-                <a href="javascript:;" data-toggle="collapse" data-target="#recentactivity"><h4>Meetings</h4></a>
-            </div>
-            <div id="recentactivity" class="collapse in">
-                <div class="widget-body">
-                    <div class="recent-activities">
-                        <div>
-                            <h5 class="report-status">Design</h5>
-                            <span class="report-time">1:12PM, Thursday, November 19, 2016</span>
-                            <ul class="user-avatar list-inline">
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_01.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_02.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_03.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_04.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_05.png" class="img-responsive avatar">
-                                </li>
-                            </ul>
-                            <button class="btn btn-success"><i class="fa fa-check"></i></button>
-                        </div>
-
-                        <div>
-                            <h5 class="report-status">Development</h5>
-                            <span class="report-time">11:40AM, Sunday, November 22, 2016</span>
-                            <ul class="user-avatar list-inline">
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_06.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_07.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_08.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_09.png" class="img-responsive avatar">
-                                </li>
-                                <li class="">
-                                    <img src="assets/demo/avatar/avatar_10.png" class="img-responsive avatar">
-                                </li>
-                            </ul>
-                            <button class="btn btn-default disabled"><i class="fa fa-undo"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="widget">
-            <div class="widget-heading">
-                <a href="javascript:;" data-toggle="collapse" data-target="#widget-contact"><h4>Contacts</h4></a>
-            </div>
-            <div id="widget-contact" class="collapse in">
-                <div class="widget-body">
-                    <ul class="contact-list">
-                        <li id="contact-1">
-                            <a>
-                                <h5>Dashboard design</h5>
-                                <span>4 members, 5 jobs</span>
-                            </a>
-                        </li>
-                        <li id="contact-2">
-                            <a>
-                                <h5>Profile page psd</h5>
-                                <span>4 members, 5 jobs</span>
-                            </a>
-                        </li>
-                        <li id="contact-3">
-                            <a>
-                                <h5>Documentation</h5>
-                                <span>4 members, 5 jobs</span>
-                            </a>
-                        </li>
-                        <li id="contact-4">
-                            <a>
-                                <h5>Plugins</h5>
-                                <span>4 members, 5 jobs</span>
-                            </a>
-                        </li>
-                        <li id="contact-5">
-                            <a>
-                                <h5>App development</h5>
-                                <span>4 members, 5 jobs</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        </div>
-
-
 
 
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -520,34 +566,24 @@
 <script src="assets/plugins/sparklines/jquery.sparklines.min.js"></script> 			 <!-- Sparkline -->
 
 <script src="assets/plugins/codeprettifier/prettify.js"></script> 				<!-- Code Prettifier  -->
-<script src="assets/plugins/bootstrap-switch/bootstrap-switch.js"></script> 		<!-- Swith/Toggle Button -->
 
 <script src="assets/plugins/bootstrap-tabdrop/js/bootstrap-tabdrop.js"></script>  <!-- Bootstrap Tabdrop -->
 
-<script src="assets/plugins/iCheck/icheck.min.js"></script>     					<!-- iCheck -->
+
 
 <script src="assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js"></script> <!-- nano scroller -->
 
 <script src="assets/js/application.js"></script>
 <script src="assets/demo/demo.js"></script>
-<script src="assets/demo/demo-switcher.js"></script>
 
 <!-- End loading site level scripts -->
 
     <!-- Load page level scripts-->
 
-<!-- Charts -->
-<script src="assets/plugins/charts-flot/jquery.flot.min.js"></script>             	<!-- Flot Main File -->
-<script src="assets/plugins/charts-flot/jquery.flot.pie.min.js"></script>             <!-- Flot Pie Chart Plugin -->
-<script src="assets/plugins/charts-flot/jquery.flot.stack.min.js"></script>       	<!-- Flot Stacked Charts Plugin -->
-<script src="assets/plugins/charts-flot/jquery.flot.resize.min.js"></script>          <!-- Flot Responsive -->
-<script src="assets/plugins/charts-flot/jquery.flot.tooltip.min.js"></script> 		<!-- Flot Tooltips -->
-<script src="assets/plugins/charts-flot/jquery.flot.spline.js"></script> 				<!-- Flot Curved Lines -->
 
-<script src="assets/plugins/switchery/switchery.js"></script>     					<!-- Switchery -->
+
 <script src="assets/plugins/form-daterangepicker/moment.min.js"></script>              <!-- Moment.js for Date Range Picker -->
 
-<script src="assets/plugins/form-daterangepicker/daterangepicker.js"></script>     	<!-- Date Range Picker -->
 
 
 <script src="assets/demo/demo-index.js"></script> 									<!-- Initialize scripts for this page-->
