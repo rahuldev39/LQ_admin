@@ -331,14 +331,22 @@ th.vertical span.red{
 .compact-table strong {
     font-size: 15px;
 }
-.table-heading h4 {
-    font-weight: 600;
-    color: #293145;
+.table-heading {
     padding-left: 10px;
     background-color: #eceff1;
     padding: 9px 13px;
     border-radius: 4px;
     font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table-heading h4{
+	margin: 0px;
+	font-weight: 600;
+	color: #293145;
 }
 select.input-sm {
     height: 31px;
