@@ -382,3 +382,11 @@ select.input-sm {
     opacity: 1;
     filter: alpha(opacity=50);
 }
+.filter-btn a {
+    margin-top: 25px;
+    padding: 9px 21px;
+    font-size: 14px;
+}
+.alternate-citation .panel{
+	margin-bottom: 0px
+}

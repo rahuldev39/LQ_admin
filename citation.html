@@ -258,19 +258,45 @@
 				<div class="panel-body">
 
             <div class="form-container">
-              <label>Citation</label>
-              <div class="row">
-                       <div class="col-md-9">
-                           <div class="form-group">
-                              <div class="input-group">
-                                <input type="text"  class="form-control" placeholder="Please Enter Citation">
-                                <div class="input-group-btn">
-                                  <a href="#" class="btn btn-primary ">Submit</a>
-                                </div>
-                              </div>
 
-                             </div>
-                         </div>
+              <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label>Court Type</label>
+                          <select class="form-control" name="">
+                            <option value="">Select Court</option>
+                            <option value="">Supereme Court</option>
+                            <option value="">Hight Court</option>
+                            <option value="">Other Court</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label>Journal</label>
+                          <select class="form-control" name="">
+                            <option value="">Select Journal</option>
+                            <option value="">LQ 1991 SC 0074</option>
+                            <option value="">LQ 1998 SC 0256</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label>Case Year</label>
+                          <select class="form-control" name="">
+                            <option value="">Select Year</option>
+                            <option value="">1980</option>
+                            <option value="">1990</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="filter-btn">
+                          <a href="#" class="btn btn-primary ">Filter</a>
+                        </div>
+                      </div>
+
                      </div>
 
                      <div class="citation-result">
@@ -314,63 +340,72 @@
                 </div>
 
                 <div class="alternate-citation">
+                  <div class="panel panel-bluegraylight" data-widget='{"draggable": "false"}'>
+                    <div class="panel-heading">
+                      <h2>Alternate Citation</h2>
+                      <div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+                        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#citation-modal">Add Alternate Citation</a>
+                      </div>
+                    </div>
+                    <div class="panel-body">
 
-                  <div class="table-heading">
-                    <h4>Alternate Citation</h4>
-                    <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#citation-modal">Add Alternate Citation</a>
+                      <div class="table-responsive">
+                 <table class="table table-lightborder table-bordered compact-table">
+                   <tbody>
+                     <tr>
+                       <td>
+                         <strong>SCC 1 1 1995</strong>
+                       </td>
+                       <td>
+                         <strong>1 AIR 1995</strong>
+                       </td>
+                       <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                         <strong>SCC 2 1 1980</strong>
+                       </td>
+                       <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                         <strong>2 AIR 1990</strong>
+                       </td>
+                     </tr>
+
+                     <tr>
+                       <td>
+                         <strong>SCC 2 4 1985</strong>
+                       </td>
+                       <td>
+                         <strong>2 AIR 1990</strong>
+                       </td>
+                       <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                         <strong>SCC 2 3 1982</strong>
+                       </td>
+                       <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                         <strong>3 AIR 1990</strong>
+                       </td>
+                     </tr>
+
+                     <tr>
+                       <td>
+                         <strong>SCC 1 1 1995</strong>
+                       </td>
+                       <td>
+                         <strong>1 AIR 1995</strong>
+                       </td>
+                       <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                         <strong>SCC 2 1 1980</strong>
+                       </td>
+                       <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
+                         <strong>2 AIR 1990</strong>
+                       </td>
+                     </tr>
+
+                   </tbody>
+                 </table>
+               </div>
+
+                    </div>
+
                   </div>
 
-                  <div class="table-responsive">
-             <table class="table table-lightborder table-bordered compact-table">
-               <tbody>
-                 <tr>
-                   <td>
-                     <strong>SCC 1 1 1995</strong>
-                   </td>
-                   <td>
-                     <strong>1 AIR 1995</strong>
-                   </td>
-                   <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
-                     <strong>SCC 2 1 1980</strong>
-                   </td>
-                   <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
-                     <strong>2 AIR 1990</strong>
-                   </td>
-                 </tr>
 
-                 <tr>
-                   <td>
-                     <strong>SCC 2 4 1985</strong>
-                   </td>
-                   <td>
-                     <strong>2 AIR 1990</strong>
-                   </td>
-                   <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
-                     <strong>SCC 2 3 1982</strong>
-                   </td>
-                   <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
-                     <strong>3 AIR 1990</strong>
-                   </td>
-                 </tr>
-
-                 <tr>
-                   <td>
-                     <strong>SCC 1 1 1995</strong>
-                   </td>
-                   <td>
-                     <strong>1 AIR 1995</strong>
-                   </td>
-                   <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
-                     <strong>SCC 2 1 1980</strong>
-                   </td>
-                   <td class="d-sm-none d-xxxxl-table-cell d-md-table-cell d-xxl-none">
-                     <strong>2 AIR 1990</strong>
-                   </td>
-                 </tr>
-
-               </tbody>
-             </table>
-           </div>
                 </div>
 
 
@@ -471,7 +506,7 @@
           </table>
 
         </div>
-        
+
       </div>
     </div>
   </div>
