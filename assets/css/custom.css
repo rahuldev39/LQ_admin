@@ -390,3 +390,6 @@ select.input-sm {
 .alternate-citation .panel{
 	margin-bottom: 0px
 }
+.datepicker.dropdown-menu{
+	    right: auto;
+}
